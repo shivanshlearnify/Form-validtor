@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Register with us!</h2>
+        <form action="/myaction.php" name="myForm" onsubmit="return validateForm()" method="post">
+            <div class="formDesign" id="name">
+                Name: <input  class="input" type="text" name="fname" >
+                <b><span class="formerror">Error message</span></b>
+            </div>
+            <div class="formDesign" id="email">
+                Email: <input  class="input" type="email" name="femail" >
+                <b><span class="formerror">Error message</span></b>
+            </div>
+            <div class="formDesign" id="phone">
+                Phone: +91 <input  class="input" type="phone" name="fphone" >
+                <b><span class="formerror">Error message</span></b>
+            </div>
+            <div class="formDesign" id="pass">
+                Password: <input   class="input" type="password" name="fpass" >
+                <b><span class="formerror">Error message</span></b>
+            </div>
+            <div class="formDesign" id="cpass">
+                Confirm Password: <input   class="input" type="password" name="fcpass" >
+                <b><span class="formerror">Error message</span></b>
+            </div>
+            <input class="btn" type="submit" value="Submit">
+    
+    
+        </form>
+    </div>
+    
+
+    <script src="app.js"></script>
+</body>
+
+</html>
